@@ -1,8 +1,13 @@
+object\keyObject.class
+main\KeyControl.class
+tile\TileManager.class
+object\SuperObject.class
+Entity\Player.class
 main\CollisionChecker.class
 main\GamePanel.class
 tile\Tile.class
-main\KeyControl.class
-tile\TileManager.class
+object\doorObject.class
+main\AssetSetter.class
 Entity\Entity.class
-Entity\Player.class
+object\chestObject.class
 main\main.class

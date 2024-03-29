@@ -46,14 +46,22 @@ public class Player extends Entity {
     }
     public final void getPlayerImage(){
         try{
-            up1 = ImageIO.read(new File("res/player/bodyup_1.png"));
-            up2 = ImageIO.read(new File("res/player/bodyup_2.png"));
-            down1 = ImageIO.read(new File("res/player/bodydown_1.png"));
-            down2 = ImageIO.read(new File("res/player/bodydown_2.png"));
-            right1 = ImageIO.read(new File("res/player/bodyright_1.png"));
-            right2 = ImageIO.read(new File("res/player/bodyright_2.png"));
-            left1 = ImageIO.read(new File("res/player/bodyleft_1.png"));
-            left2 = ImageIO.read(new File("res/player/bodyleft_2.png"));
+            up1 = ImageIO.read(new File("res/player/Body_Up1.png"));
+            up2 = ImageIO.read(new File("res/player/Body_Up2.png"));
+            down1 = ImageIO.read(new File("res/player/Body_Down1.png"));
+            down2 = ImageIO.read(new File("res/player/Body_Down2.png"));
+            right1 = ImageIO.read(new File("res/player/Body_Right1.png"));
+            right2 = ImageIO.read(new File("res/player/Body_Right2.png"));
+            left1 = ImageIO.read(new File("res/player/Body_Left1.png"));
+            left2 = ImageIO.read(new File("res/player/Body_Left2.png"));
+            upLeft1 = ImageIO.read(new File("res/player/Body_UpLeft1.png"));
+            upLeft2 = ImageIO.read(new File("res/player/Body_UpLeft2.png"));
+            downLeft1 = ImageIO.read(new File("res/player/Body_DownLeft1.png"));
+            downLeft2 = ImageIO.read(new File("res/player/Body_DownLeft2.png"));
+            upRight1 = ImageIO.read(new File("res/player/Body_UpRight1.png"));
+            upRight2 = ImageIO.read(new File("res/player/Body_UpRight2.png"));
+            downRight1 = ImageIO.read(new File("res/player/Body_DownRight1.png"));
+            downRight2 = ImageIO.read(new File("res/player/Body_DownRight2.png"));
         }
         catch(IOException e){
             e.printStackTrace();
@@ -165,6 +173,38 @@ public class Player extends Entity {
                 }
                 if(spriteNum == 2){
                     image = left2;
+                }
+            }
+            case"upleft" -> {
+                if(spriteNum == 1){
+                    image=upLeft1;
+                }
+                if(spriteNum == 2){
+                    image = upLeft2;
+                }
+            }
+            case"upright" -> {
+                if(spriteNum == 1){
+                    image=upRight1;
+                }
+                if(spriteNum == 2){
+                    image = upRight2;
+                }
+            }
+            case"downright" -> {
+                if(spriteNum == 1){
+                    image=downRight1;
+                }
+                if(spriteNum == 2){
+                    image = downRight2;
+                }
+            }
+            case"downleft" -> {
+                if(spriteNum == 1){
+                    image=downLeft1;
+                }
+                if(spriteNum == 2){
+                    image = downLeft2;
                 }
             }
         }

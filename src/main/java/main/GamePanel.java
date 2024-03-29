@@ -9,6 +9,7 @@ import java.awt.Color;
 import javax.swing.JPanel;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import object.SuperObject;
 import tile.TileManager;
 /**
  *
@@ -37,6 +38,8 @@ public class GamePanel extends JPanel implements Runnable {
     Thread gameThread ;
     public CollisionChecker cChecker = new CollisionChecker(this);
     public Player player = new Player(this,keyC);
+    public SuperObject obj[] = new SuperObject[10];
+    public AssetSetter aSetter = new  AssetSetter(this);
     
     public GamePanel(){
         this.setPreferredSize(new Dimension(screenWidth,screenHeight));
@@ -44,6 +47,9 @@ public class GamePanel extends JPanel implements Runnable {
         this.setDoubleBuffered(true);
         this.addKeyListener(keyC);
         this.setFocusable(true);
+    }
+    public void setup(){
+        aSetter.setObject();
     }
     
     public void startThread(){
@@ -88,8 +94,15 @@ public class GamePanel extends JPanel implements Runnable {
         super.paintComponent(g);
         
         Graphics2D g2D = (Graphics2D) g;
-        
+        //tile
         tileM.draw(g2D);
+        
+        //object
+        for(int i=0;i<obj.length;i++){
+            if (obj[i]!= null){
+                obj[i].draw(g2D, this);
+            }
+        }
         player.draw(g2D);
         
         g2D.dispose();

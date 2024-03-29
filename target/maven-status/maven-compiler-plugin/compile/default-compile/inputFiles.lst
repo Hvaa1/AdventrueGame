@@ -1,8 +1,13 @@
+D:\JavaProject\AdventureGame\src\main\java\main\AssetSetter.java
+D:\JavaProject\AdventureGame\src\main\java\main\main.java
+D:\JavaProject\AdventureGame\src\main\java\Entity\Entity.java
+D:\JavaProject\AdventureGame\src\main\java\object\chestObject.java
+D:\JavaProject\AdventureGame\src\main\java\main\KeyControl.java
+D:\JavaProject\AdventureGame\src\main\java\object\SuperObject.java
+D:\JavaProject\AdventureGame\src\main\java\main\GamePanel.java
 D:\JavaProject\AdventureGame\src\main\java\tile\Tile.java
 D:\JavaProject\AdventureGame\src\main\java\main\CollisionChecker.java
-D:\JavaProject\AdventureGame\src\main\java\main\main.java
+D:\JavaProject\AdventureGame\src\main\java\object\keyObject.java
 D:\JavaProject\AdventureGame\src\main\java\tile\TileManager.java
-D:\JavaProject\AdventureGame\src\main\java\Entity\Entity.java
 D:\JavaProject\AdventureGame\src\main\java\Entity\Player.java
-D:\JavaProject\AdventureGame\src\main\java\main\KeyControl.java
-D:\JavaProject\AdventureGame\src\main\java\main\GamePanel.java
+D:\JavaProject\AdventureGame\src\main\java\object\doorObject.java

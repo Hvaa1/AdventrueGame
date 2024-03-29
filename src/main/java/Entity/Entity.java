@@ -15,7 +15,7 @@ public class Entity {
     public int worldX,worldY;
     public int speed;
     public String direction;
-    public BufferedImage up1,up2,down1,down2,right1,right2,left1,left2;
+    public BufferedImage up1,up2,down1,down2,right1,right2,left1,left2,upLeft1,upLeft2,upRight1,upRight2,downRight1,downRight2,downLeft1,downLeft2;
     public int spriteNum = 1;
     public int spriteCount = 0;
     public Rectangle solidArea;
